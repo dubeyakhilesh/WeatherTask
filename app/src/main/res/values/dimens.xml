@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="icons_large">30dp</dimen>
+    <dimen name="icons">30dp</dimen>
+    <dimen name="icons_small">25dp</dimen>
+    <dimen name="icons_extra_small">20dp</dimen>
+    <dimen name="text_size_title">14sp</dimen>
+    <dimen name="text_size_large">14sp</dimen>
+    <dimen name="text_size_extraLarge">18sp</dimen>
+    <dimen name="text_size">12sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size_ultra_small">8sp</dimen>
+    <dimen name="margin">5dp</dimen>
+    <dimen name="margin_small_medium">7dp</dimen>
+    <dimen name="margin_medium">10dp</dimen>
+    <dimen name="margin_large">15dp</dimen>
+    <dimen name="margin_pad">20dp</dimen>
+    <dimen name="margin_pad_i">25dp</dimen>
+    <dimen name="margin_pad_ii">30dp</dimen>
+
+    <dimen name="margin_small">3dp</dimen>
+
+
+//home
+    <dimen name="home_margin_left">22dp</dimen>
+
+    <dimen name="badge_margin_top">5dp</dimen>
+    <dimen name="badge_margin_left">22dp</dimen>
+    <dimen name="badge_margin_bottom">20dp</dimen>
+    <dimen name="badge_size">20dp</dimen>
+
+    <!--Image size-->
+    <dimen name="image_size">75dp</dimen>
+    <dimen name="image_sizeEarn">60dp</dimen>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar"/>
+
+    <FrameLayout
+        android:id="@+id/flMetric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appWhite"
+        android:layout_margin="@dimen/margin_large"
+        android:paddingLeft="@dimen/margin_large"
+        android:paddingTop="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_large"
+        android:paddingBottom="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/txtMetric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:text="@string/fetch_metric"
+            android:textColor="@color/appblack"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/icons_extra_small"
+            android:layout_height="@dimen/icons_extra_small"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/margin"
+            android:src="@drawable/dropdown" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appWhite"
+        android:layout_margin="@dimen/margin_large"
+        android:paddingLeft="@dimen/margin_large"
+        android:paddingTop="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_large"
+        android:paddingBottom="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fetch_location"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:textColor="@color/appblack"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/icons_extra_small"
+            android:layout_height="@dimen/icons_extra_small"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/margin"
+            android:src="@drawable/dropdown" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_large"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFetch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:text="@string/fetch_fetch"
+            android:textColor="@color/appblack" />
+
+    </LinearLayout>
+
+</LinearLayout>

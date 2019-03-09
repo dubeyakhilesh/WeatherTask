@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WeatherTask</string>
+    <!--Progress Dialog-->
+    <string name="progress_message">Please Wait...</string>
+    <string name="error_noInternet">Please check your internet connection.</string>
+    <string name="error_server">Some thing went wrong</string>
+    <string name="weather_month">Month: </string>
+    <string name="weather_year">Year:</string>
+    <string name="weather_value">Value:</string>
+    <string name="select_year">Select Year</string>
+
+    <!-- Fetch data screen-->
+    <string name="fetch_title">Get Weather Data</string>
+    <string name="fetch_metric">Select Metric</string>
+    <string name="fetch_location">Select Location</string>
+    <string name="fetch_select">Select</string>
+    <string name="fetch_fetch">Fetch</string>
+    <string name="fetch_selectMetricData">Please select metric data</string>
+    <string name="fetch_selectLocation">Please select location</string>
+    <string name="fetch_someThingWrong">Some thing went wrong</string>
+    <string name="fetch_recordSave">All record save successfully</string>
+
+</resources>
