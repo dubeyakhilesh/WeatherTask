@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.example.weather.R;
 import com.example.weather.database.model.WeatherItem;
+import com.example.weather.utility.AppManager;
 import com.example.weather.weatherRecordList.model.WeatherData;
 
 import java.util.ArrayList;
@@ -37,10 +38,20 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherL
     @Override
     public void onBindViewHolder(WeatherListItem holder, int position) {
         WeatherItem weatherItem = weatherItems.get(position);
+        if(AppManager.isValidString(weatherItem.getMonth()))
+            holder.txtMonth.setText(context.getString(R.string.weather_month) + " " + weatherItem.getMonth());
+        else
+            holder.txtMonth.setText("N/A");
 
-        holder.txtMonth.setText(context.getString(R.string.weather_month) + " " + weatherItem.getMonth());
-        holder.txtValue.setText(context.getString(R.string.weather_value) + " " + weatherItem.getValue());
-        holder.txtYear.setText(context.getString(R.string.weather_year) + " " + weatherItem.getYear());
+        if(AppManager.isNum("" + weatherItem.getValue()))
+            holder.txtValue.setText(context.getString(R.string.weather_value) + " " + weatherItem.getValue());
+        else
+            holder.txtValue.setText("N/A");
+
+        if(AppManager.isNum("" + weatherItem.getYear()))
+            holder.txtYear.setText(context.getString(R.string.weather_year) + " " + weatherItem.getYear());
+        else
+            holder.txtYear.setText("N/A");
     }
 
     @Override
